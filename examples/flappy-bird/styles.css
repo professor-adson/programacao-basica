@@ -1,0 +1,25 @@
+div#container {
+    width: var(--CONTAINER_WIDTH);
+    height: var(--CONTAINER_HEIGHT);
+    background: var(--light-gray);
+    position: relative;
+}
+
+div#container > div#bird {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+}
+
+div#container > div.obstacle {
+    position: absolute;
+    top: 0;
+    height: var(--CONTAINER_HEIGHT);
+    background: black;
+}
+
+div#container > div.obstacle > div.gap {
+    left: 0;
+    background: var(--light-gray);
+}
